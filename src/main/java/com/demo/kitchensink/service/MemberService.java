@@ -25,6 +25,10 @@ public class MemberService {
         return  memberRepository.findById(id);
     }
 
+    public Optional<Member> getMemberByEmail(String email) {
+        return  memberRepository.findByEmail(email);
+    }
+
     public Member registerMember(Member member) {
         return memberRepository.save(member);
     }

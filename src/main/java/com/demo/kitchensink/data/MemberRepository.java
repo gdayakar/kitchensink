@@ -13,4 +13,5 @@ public interface MemberRepository extends MongoRepository<Member, String> {
     @Override
     List<Member> findAll();
 
+    Optional<Member> findByEmail(String email);
 }

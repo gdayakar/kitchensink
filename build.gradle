@@ -24,6 +24,9 @@ dependencies {
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 	testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
 	implementation group: 'com.fasterxml.jackson.core', name: 'jackson-databind'
+	implementation group: 'jakarta.validation', name: 'jakarta.validation-api'
+	implementation group: 'jakarta.ws.rs', name: 'jakarta.ws.rs-api'
+
 }
 
 tasks.named('test') {
